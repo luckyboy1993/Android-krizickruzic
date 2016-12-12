@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="games.luckygames.BluetoothActivity">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Visibility"
+        android:id="@+id/bVisibility"
+        android:layout_x="40dp"
+        android:layout_y="54dp"
+        android:layout_marginBottom="45dp"
+        android:background="#6bb1f3"
+        android:textColor="#a30707"
+        android:layout_above="@+id/bPaired"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices"
+        android:id="@+id/bPaired"
+        android:layout_x="191dp"
+        android:layout_y="184dp"
+        android:background="#6bb1f3"
+        android:textColor="#a30707"
+        android:layout_alignTop="@+id/bScan"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Scan for devices"
+        android:id="@+id/bScan"
+        android:layout_x="37dp"
+        android:layout_y="190dp"
+        android:background="#6bb1f3"
+        android:textColor="#a30707"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/bVisibility" />
+
+    <TextView
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:id="@+id/vVisibility"
+        android:layout_x="262dp"
+        android:layout_y="66dp"
+        android:textColor="#a30707"
+        android:layout_alignBottom="@+id/bVisibility"
+        android:layout_alignEnd="@+id/bScan"
+        android:layout_marginEnd="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bOnOff"
+        android:layout_x="92dp"
+        android:layout_y="333dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="Bluetooth On"
+        android:background="#6bb1f3"
+        android:textColor="#a30707" />
+
+</RelativeLayout>

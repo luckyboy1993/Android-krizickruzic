@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="games.luckygames.MainActivity"
+    android:id="@+id/bGames">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/bBluetooth"
+        android:layout_alignEnd="@+id/bBluetooth"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/iksoks"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/bBluetooth"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#a30707"
+        android:textSize="20dp" />
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sMusic"
+        android:checked="false"
+        android:layout_marginEnd="23dp"
+        android:backgroundTint="#a30707"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/bBluetooth" />
+
+    <TextView
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:text="Music"
+        android:id="@+id/vMusic"
+        android:textColor="#a30707"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/sMusic" />
+
+
+</RelativeLayout>
